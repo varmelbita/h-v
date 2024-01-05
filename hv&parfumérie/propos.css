@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*Navbar*/
+
+
+header {
+    position: absolute;
+    background-color: #fff;
+    width: 1200px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+.navbar {  /*Pour retirer le petit point de la liste nav*/
+    list-style: none;
+    display: flex;
+}
+
+.navbar li { /*Pour aligner la liste nav*/
+    display: inline-block;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+li, a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #A9A5A0;
+    text-decoration: none;      
+}
+mark { /*Pour changer la couleur d'une li spécifique en fonction de la page 
+    (ex: on est sur la page "à propos" ça seras la li "à propos" qui sera marqué) */
+    background-color: transparent;
+    color: #6955AA;
+    font-weight: 500;
+}
+
+/*grille*/
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(6,auto);
+    row-gap: 50px; 
+    margin: 0px 350px;
+}
+/*Organisation des section*/
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {   
+    font-family: 'Abril Fatface';
+    font-size: 38px;
+    color: #E74862;   
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #242424;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #0074AB;
+}
+
+.pp { /*apparence des images de profil*/
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+section { /*s'applique à toute les sections*/
+    grid-column: 1/2;
+    margin-top: 0px;
+}
+
+.pres { /*Section présentation*/
+    margin-top: 160px;
+}
+.pres p { /*Section présentation*/
+     color: #000;
+}
+.Titre p {
+    color: #000;
+}
+.p1 p{
+    color: #000;
+    
+}
+
+
+.profilpp { /*Section des photos*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
